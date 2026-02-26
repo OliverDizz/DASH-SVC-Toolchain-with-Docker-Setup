@@ -83,6 +83,28 @@ Christian Kreuzberger, Daniel Posch, Hermann Hellwagner, "A Scalable Video Codin
 This section describes the scripts for downloading and testing. Create a directory, e.g., SVCDemo, switch to this 
 directory and follow the steps below:
 
+### Docker installation
+
+This part assumes you have docker sucessfully installed and running on your system. If not, follow the [Docker Engine installation guide](https://docs.docker.com/engine/install) and return to this part.
+
+This fork comes with a custom script to setup the environment, build the tools, and test if the toolchain works based on code from the original repo. To start the installation, cd into the cloned folder and run:
+
+	./setup.sh
+
+And it will start to build the environment and tools.
+If you see the output: 
+
+	Setup of DASH-SVC environment complete!
+
+You should now have a completely funtional environment and toolchain to start testing.
+
+To enter the container interactively and start using the toolchain run:
+
+	docker run -it -v $(pwd):/app svc-env
+
+
+
+### Legacy installation
 Install required packages and download this git repository:
 
 	# Requires: python (2.7), cvs, git
