@@ -6,7 +6,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     python2.7 python2.7-dev python-pip \
     wget git build-essential cmake \
-    gcc-4.8 g++-4.8 libxml2-dev libcurl4-openssl-dev
+    gcc-4.8 g++-4.8 libxml2-dev libcurl4-openssl-dev \
+    nano ffmpeg
 
 # Force the system to use GCC 4.8 as the default
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 100 && \
