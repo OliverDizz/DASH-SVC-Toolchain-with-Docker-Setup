@@ -1,6 +1,6 @@
 [submodule "libdash"]
-	path = libdash
-	url = git://github.com/bitmovin/libdash.git
+        path = libdash
+        url = https://github.com/bitmovin/libdash.git
 [submodule "jsvm"]
-	path = jsvm
-	url = git@github.com:floriandejonckheere/jsvm.git
+        path = jsvm
+        url = https://github.com/floriandejonckheere/jsvm.git
